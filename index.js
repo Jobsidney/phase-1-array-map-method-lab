@@ -1,4 +1,4 @@
-const tutorials = [
+let tutorials = [
   'what does the this keyword mean?',
   'What is the Constructor OO pattern?',
   'implementing Blockchain Web API',
@@ -10,7 +10,40 @@ const tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
+const singles=[]
 
-const titleCased = () => {
-  return tutorials
+function titleCased(){
+
 }
+// console.log(titleCased())
+
+// tutorials.forEach(element => {
+//   word=element.split(' ');
+//   let word2=word.map(x=>`${x.charAt(0).toUpperCase()}${x.slice(1)}`).join(' ');
+//   singles.push(word2);
+  
+// });
+console.log(titleCased());
+function titleCased(){
+  tutorials.forEach(element => {
+    word=element.split(' ');
+    let word2=word.map(x=>`${x.charAt(0).toUpperCase()}${x.slice(1)}`).join(' ');
+    singles.push(word2);
+    
+  });
+  
+}
+// console.log(titleCased());
+
+titleCased()
+// function getTitleCase(str) {
+//   const titleCase = str
+//     .toLowerCase()
+//     .split(' ')
+//     .map(word => {
+//       return word.charAt(0).toUpperCase() + word.slice(1);
+//     })
+//     .join(' ');
+
+//   return titleCase;
+// }
